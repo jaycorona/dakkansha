@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+html,body {
+	font:13px/1.231 "メイリオ", Meiryo, "trebuchet ms",arial,helvetica,"hirakakupro-w3",osaka,"ms pgothic",sans-serif;
+	text-align:left;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing:1px;
+}
+
+
+#wrapper{
+	max-width:853px;
+	padding:0;
+	margin:0 auto;
+	background: #f7f7f5;
+}
+
+#screen-container{
+	position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+#screen-container iframe{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+a {
+	text-decoration:none!important;
+}
+
+a:hover {
+	text-decoration:none!important;
+}
+
+#main{
+	max-width: 853px;
+ 	min-height: 50px; 
+	overflow:hidden;
+}
+
+#navi{
+	max-width:853px;
+	display:none;
+	margin:0 auto!important;
+}
+
+#navi li{
+	display: inline-block;
+	list-style: none;
+	float:left;
+	display:block;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:1px;
+	overflow: hidden;
+ 	word-break: break-word;
+	padding-left: 0px;	
+}
+#navi li a{
+	display: table-cell!important; 
+	vertical-align:middle;
+	text-align:center;
+	padding:5px;
+}
+.li2{
+	width:478px !important;
+	font-size:13px !important;
+	letter-spacing:1px;
+}
+
+#t0{
+	width:33%;
+}
+
+#t1{
+	width:34%;
+}
+
+#t2{
+	width:33%;
+}
+
+#navi li a{
+	color:#111393;
+	display:block;
+}
+
+#navi li a:hover{
+	background:#B6D6FF;
+	color:#111393;
+}
+
+.selected{
+	background:#B6D6FF;
+	color:#111393 !important;
+}
+@media only screen and (min-width: 853px){
+	#t2{
+/* 		min-width:284.33px!important; */
+	}
+}
+@media only screen and (max-width: 853px){
+	#navi{
+/* 		margin-left:4px!important; */
+	}
+@media only screen and (max-width: 541px){
+	#navi li{
+		font-size: 12px!important;
+		letter-spacing:0px;
+	}	
+}
+@media screen and (max-width: 353px){
+	#navi li{
+		font-size: 11px!important;
+		letter-spacing:0px;
+	}
+}

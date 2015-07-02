@@ -1,0 +1,32 @@
+﻿@charset "utf-8";
+
+/************************************************
+
+@common_styles
+サイト内に共通のcss
+
+************************************************/
+
+
+/*----------------------------------------------
+@ SNS
+-----------------------------------------------*/
+#sns-container{
+	padding:10px 0 0;
+	height: 20px;
+	margin:0;
+	width:450px;
+}
+
+#sns-container li {
+	float: left;
+	margin:0 10px 0 0;
+	list-style-type: none;
+	text-align:left;
+}
+
+.twitter-btn{ width:80px; }
+.fb-btn{ width:115px; }
+.mixi-btn{ width:100px; }
+.google-btn{ width:70px;}
+

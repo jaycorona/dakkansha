@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#slider-container {
+	width:960px;
+	margin:30px auto 0px auto;
+}
+
+#lemmon-slider    { overflow:hidden; position:absolute; width:930px; height:45px !important;top:0px;left:16px;z-index:10; }
+#lemmon-slider ul { margin:0; padding:0; height:45px; }
+#lemmon-slider li { float:left; list-style:none; margin:0 5px 0 0; }
+#lemmon-slider li { text-align:center; line-height:1em; font-size:25px; }
+
+.controls{
+	position:absolute;
+	z-index:1;
+	width:100%;
+}
+
+.prev-slide{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:15px;
+}
+
+.next-slide{
+	width:15px;
+	position:absolute;
+	top:0px;
+	right:0;
+}

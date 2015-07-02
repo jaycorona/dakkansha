@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+html,body  {
+	font-size: 13px;
+	color: #000;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+	text-align: left;
+}
+
+/* for IE6 */
+* html body {
+	font-size:small;
+}
+
+/* for IE7 */
+*:first-child+html body {
+	font-size:small
+}
+
+
+
+
+/*----------------------------------------------
+
+h
+
+-----------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: normal;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style: normal; font-weight: normal;}
+
+
+
+/*----------------------------------------------
+
+margin padding
+
+-----------------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,
+p,blockquote,table,th,td { margin: 0px; padding: 0px;}
+
+
+/*----------------------------------------------
+
+block
+
+-----------------------------------------------*/
+div,h1,h2,h3,h4,h5,h6,p,blockquote,pre,address {
+  display: block;
+}
+
+
+/*----------------------------------------------
+
+img
+
+-----------------------------------------------*/
+img { border: none; vertical-align: bottom; margin: 0px; padding: 0px;}
+img a:link { text-decoration: none; }
+img a:hover { text-decoration: none; }
+
+
+/*----------------------------------------------
+
+a
+
+-----------------------------------------------*/
+a { color: #000000; text-decoration: underline; outline: none; border-style: none; }
+a:hover { text-decoration: none; }
+
+
+/*----------------------------------------------
+
+list
+
+-----------------------------------------------*/
+ul,dl,ol { text-indent: 0;}
+li,dt,dd  { list-style: none none outside; font-size: 100%;}
+
+
+
+/*----------------------------------------------
+
+sup,sub
+
+-----------------------------------------------*/
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+
+
+
+
+/*----------------------------------------------
+
+table
+
+-----------------------------------------------*/
+table {border-collapse: collapse; border-spacing: 0; font-size: inherit;}
+th,td {text-align: left; vertical-align: top;}
+caption {text-align: left;}
+
+
+/*----------------------------------------------
+
+textarea
+
+-----------------------------------------------*/
+input,select,textarea {font-size: 100%; font-family: Verdana, Helvetica, sans-serif;}
+* html input,* html textarea,* html select {font-size: 100%;}
+*:first-child+html+input,*:first-child html+textarea,*:first-child+html select {font-size: 100%;}
+
+
+/*----------------------------------------------
+
+
+
+-----------------------------------------------*/
+pre,code,kbd,samp,tt {font-family: monospace;}
+* html pre,* html code,* html kbd,* html samp,* html tt {font-size: 100%; line-height: 100%;}
+*:first-child+html pre,*:first-child html+code,*:first-child html+kbd,*:first-child+html+samp,*:first-child+html tt {font-size: 108%; line-height: 100%;}
+

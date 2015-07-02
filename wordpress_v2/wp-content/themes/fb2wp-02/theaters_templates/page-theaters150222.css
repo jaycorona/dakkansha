@@ -1,0 +1,549 @@
+@charset "utf-8";
+
+html,body  {
+	font-size: 13px;
+	color: #000;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+	text-align: left;
+}
+
+/* for IE6 */
+* html body {
+	font-size:small;
+}
+
+/* for IE7 */
+*:first-child+html body {
+	font-size:small
+}
+
+
+
+
+/*----------------------------------------------
+
+h
+
+-----------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: normal;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style: normal; font-weight: normal;}
+
+
+
+/*----------------------------------------------
+
+margin padding
+
+-----------------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,
+p,blockquote,table,th,td { margin: 0px; padding: 0px;}
+
+
+/*----------------------------------------------
+
+block
+
+-----------------------------------------------*/
+div,h1,h2,h3,h4,h5,h6,p,blockquote,pre,address {
+  display: block;
+}
+
+
+/*----------------------------------------------
+
+img
+
+-----------------------------------------------*/
+img { border: none; vertical-align: bottom; margin: 0px; padding: 0px;}
+img a:link { text-decoration: none; }
+img a:hover { text-decoration: none; }
+
+
+/*----------------------------------------------
+
+a
+
+-----------------------------------------------*/
+a { color: #000000; text-decoration: underline; outline: none; border-style: none; }
+a:hover { text-decoration: none; }
+
+
+/*----------------------------------------------
+
+list
+
+-----------------------------------------------*/
+ul,dl,ol { text-indent: 0;}
+li,dt,dd  { list-style: none none outside; font-size: 100%;}
+
+
+
+/*----------------------------------------------
+
+sup,sub
+
+-----------------------------------------------*/
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+
+
+
+
+/*----------------------------------------------
+
+table
+
+-----------------------------------------------*/
+table {border-collapse: collapse; border-spacing: 0; font-size: inherit;}
+th,td {text-align: left; vertical-align: top;}
+caption {text-align: left;}
+
+
+/*----------------------------------------------
+
+textarea
+
+-----------------------------------------------*/
+input,select,textarea {font-size: 100%; font-family: Verdana, Helvetica, sans-serif;}
+* html input,* html textarea,* html select {font-size: 100%;}
+*:first-child+html+input,*:first-child html+textarea,*:first-child+html select {font-size: 100%;}
+
+
+/*----------------------------------------------
+
+
+
+-----------------------------------------------*/
+pre,code,kbd,samp,tt {font-family: monospace;}
+* html pre,* html code,* html kbd,* html samp,* html tt {font-size: 100%; line-height: 100%;}
+*:first-child+html pre,*:first-child html+code,*:first-child html+kbd,*:first-child+html+samp,*:first-child+html tt {font-size: 108%; line-height: 100%;}
+
+@charset "utf-8";
+
+
+/************************************************
+
+@common_modules
+
+common.css v4.1.0
+Copyright (c) ULM design Co.,Ltd. - http://www.ulm-design.com
+Author: mitsut
+
+************************************************/
+
+.en-font{font-family:Georgia, "Times New Roman", Times, serif,Arial, Helvetica, sans-serif;}
+.font10 { font-size:77%; }
+.font11 { font-size:85%; }
+.font12 { font-size:93%; }
+.font13 { font-size:100%; }
+.font14 { font-size:108%; }
+.font15 { font-size:116%; }
+.font16 { font-size:124%; }
+.font17 { font-size:131%; }
+.font18 { font-size:139%; }
+.font19 { font-size:147%; }
+.font20 { font-size:154%; }
+.font21 { font-size:162%; }
+.font22 { font-size:169%; }
+.font23 { font-size:177%; }
+.font24 { font-size:185%; }
+.font25 { font-size:192%; }
+.font26 { font-size:200%; }
+
+*:first-child+html .font10{letter-spacing:-1px;line-height:1.2;};
+*:first-child+html .font11{letter-spacing:-1px;line-height:1.2;};
+
+
+
+/*----------------------------------------------
+
+clearfix
+
+-----------------------------------------------*/
+.clearfix { /zoom : 1; }
+.clearfix:after{ content : ''; display : block; clear : both; height:0; }
+
+
+
+/*----------------------------------------------
+
+float
+
+-----------------------------------------------*/
+.float-left{ float: left; }
+.float-right{ float: right; }
+.clear{ clear: both; }
+
+
+
+
+/*----------------------------------------------
+
+align
+
+-----------------------------------------------*/
+.align-right{
+	text-align:right;
+}
+.align-left{
+	text-align:left;
+}
+
+.align-center{
+	text-align:center;
+}
+
+
+
+/*----------------------------------------------
+
+letter-spacing
+
+-----------------------------------------------*/
+.space-none{
+	letter-spacing:0;
+}
+
+.space-narrow{
+	letter-spacing:0.1em;
+}
+
+.space-normal{
+	letter-spacing:2px;
+}
+
+
+
+
+/*----------------------------------------------
+
+list-style
+
+-----------------------------------------------*/
+/*num*/
+.list-decimal{
+	list-style::decimal;
+}
+
+/*ABC*/
+.list-upper-alpha{
+	list-style:upper-alpha;
+}
+
+/*abc*/
+.list-lower-alpha{
+	list-style:lower-alpha;
+}
+
+.list-none{
+	list-style:none;
+}
+
+
+
+/*----------------------------------------------
+
+a
+
+-----------------------------------------------*/
+a{text-decoration:underline;}
+a:link{}
+a:visited{}
+a:hover{}
+a:active{}
+
+/*----------------------------------------------
+
+
+
+-----------------------------------------------*/
+.bold{ font-weight:bold;}
+
+
+/*----------------------------------------------
+
+display
+
+-----------------------------------------------*/
+.none{ display:none;}
+.block{display:block;}
+
+
+/*----------------------------------------------
+
+position
+
+-----------------------------------------------*/
+.relative{position:relative;}
+.margin-auto{ margin:0 auto;}
+
+
+/*----------------------------------------------
+
+guard
+
+-----------------------------------------------*/
+.guard{
+    position:absolute;
+    display:block;
+    width:100%;
+    height:100%;
+	top:0;
+	left:0;
+    background-image:url(../img/spacer.gif);
+}
+﻿@charset "utf-8";
+
+/************************************************
+
+@common_styles
+サイト内に共通のcss
+
+************************************************/
+
+
+/*----------------------------------------------
+@ SNS
+-----------------------------------------------*/
+.socialWrap {
+	padding:10px 0 0;
+	height: 20px;
+	margin:0;
+	width:450px;
+}
+
+.socialWrap li {
+	float: left;
+	margin:0 10px 0 0;
+	list-style-type: none;
+	text-align:left;
+}
+.tweet{ width:80px; }
+.fbLike{ width:115px; }
+.mixiLike{ width:100px; }
+.googlePlusone{ width:70px;}
+
+@charset "utf-8";
+/**************************
+
+Theme Name: html5 Theme
+Author: mitsut
+Version: 2.0
+
+
+10px = 71%	   11px = 78%	  12px = 85%	  13px = 92%
+14px = 99%	   15px = 114%	  16px = 117%   17px = 121%
+18px = 128%  19px = 132%  20px = 145%   21px = 149%
+22px = 157%	   23px = 164%	  24px = 171%	  25px = 178%
+26px = 185% 
+
+base font-size:14px/1.231;
+
+********************/
+
+
+html,body{
+	width:100%;
+	height:100%;
+	color:#a51c78;
+	font-family:"メイリオ", Meiryo, "trebuchet ms",arial,helvetica,"hirakakupro-w3",osaka,"ms pgothic",sans-serif;
+
+}
+
+#wrapper{
+	width:100%;
+	background:url(../images/bg.jpg) center 0 fixed;
+}
+
+
+/*------------------------
+
+@ header
+
+-------------------------*/
+/*header {
+	padding:0px 0px 30px 0px;
+	margin: 0px auto;
+	
+}*/
+
+
+#maeuri-container{
+	width:880px;
+	margin:20px auto;
+	padding:0px 15px 0px 0px;
+}
+
+
+/*---------------------------------------------
+
+@ main
+
+---------------------------------------------*/
+div[role="main"]{
+	width:1024px;
+	margin:0 auto;
+	padding:0;
+	background:#fff;
+}
+
+
+
+/*---------------------------------------------
+
+section
+
+----------------------------------------------*/
+#section-container {
+	padding: 0px 82px 30px;
+	margin: 0 auto;
+	text-align: left
+}
+
+#section-container h1{
+	font-size: 93%;
+	font-weight: bold;
+	color:#a63b9e;
+	border-bottom: solid #a63b9e;
+	padding:10px 0 3px;
+}
+
+
+.theater-block{
+	padding: 10px 0 0;
+	margin:0;
+}
+
+
+/*---------------------------------------------
+
+@ article
+
+----------------------------------------------*/
+
+#section-container article {
+	padding:15px 0 8px;
+}
+
+.article-container{
+	padding:0px 0px 0px 0px;
+	color:#ec6d74;
+}
+
+.list-all article{
+	border-bottom:1px dotted #fad680;
+	padding:15px 0;
+	width: 860px;
+}
+
+.area{
+	font-size:117%;
+	font-weight:bold;
+	color:#ec6d74;
+}
+
+#section-container article p{
+	float:left;
+	padding: 5px 0 5px 25px;
+}
+
+.arealist{
+	font-weight: bold;
+	border-bottom: none;
+	color:#3f3f3f;
+	padding:50px 0px 0px 0px;
+}
+
+#date {
+	padding:15px 0px 0px 0px;
+	text-align:right;
+	color:#ec6d74;
+}
+
+
+.top-header{
+	width:860px;
+	color:#a51c78;
+	background-color:#fff0ff;
+	font-weight:bold;
+	margin-top:5px;
+	padding:10px 0px 8px 0px;
+	filter: alpha(opacity=100); /*IE*/
+	-moz-opacity: 1; /* old firefox*/
+	opacity: 1; /*chromew,firefox,safari,opera*/
+	-moz-border-radius:6px;/*firefox3.6*/
+	-webkit-border-radius:6px;/*webkit*/
+	border-radius:6px;/* Opera,IE,ie-css3 */
+}
+
+.paddingB30{
+	padding-bottom:30px;
+}
+
+.t1{
+	width:10%;
+}
+.t2{
+	width:37%;
+}
+
+.t2 a{
+	color:#ec6d74;
+}
+.t3{
+	width:13%;
+	text-align:center;
+}
+.t4{
+	width:13%;
+	text-align:center;
+}
+
+.t5{
+	width:10%;
+	text-align:center;
+}
+
+
+.areatxt{
+	font-weight:bold;
+	font-size:16px;
+}
+
+
+
+/*------------------------
+
+@ footer
+
+-------------------------*/
+/*footer{
+	width:1024px;
+	background-color:#FFF;
+	margin:0 auto;
+	text-align:center;
+	padding:40px 0px 40px 0px;
+}*/
+
+
+/*---------------------------------------------
+@ back to top
+----------------------------------------------*/
+#page-top {
+	padding: 0 25px 0px 0;
+	text-align: right;
+}
+
+
+
+
+/*---------------------------------------------
+@ a
+----------------------------------------------*/
+#section-container a {
+	color: #a63b9e;
+	text-decoration: underline;
+}
+#section-container a:hover { text-decoration: none;}

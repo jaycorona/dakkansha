@@ -1,0 +1,31 @@
+﻿@charset "utf-8";
+
+/************************************************
+
+@common_styles
+サイト内に共通のcss
+
+************************************************/
+
+
+/*----------------------------------------------
+@ SNS
+-----------------------------------------------*/
+.socialWrap {
+	padding:10px 0 0;
+	height: 20px;
+	margin:0;
+	width:450px;
+}
+
+.socialWrap li {
+	float: left;
+	margin:0 10px 0 0;
+	list-style-type: none;
+	text-align:left;
+}
+.tweet{ width:80px; }
+.fbLike{ width:115px; }
+.mixiLike{ width:100px; }
+.googlePlusone{ width:70px;}
+

@@ -1098,7 +1098,16 @@ list-style: none;
 .sp-title{
 	display:none;
 }
-	
+
+#sp-nav li > a:hover{
+	color:#000;
+}
+
+#custom-textarea_2194 .name{
+	background:none !important;
+	color:#000000;
+}
+
 @-moz-document url-prefix() {
 	.tp-page {
 		margin: 8px 4px 0px;
@@ -1114,6 +1123,31 @@ list-style: none;
 	}
 }
 @media only screen and (max-width:1024px) {
+	#custom-textarea_2194 .name {
+		color:#ffffff;
+	}
+	#sp-nav ul{
+		margin:0;
+		width:100%;
+	}
+	#sp-nav ul > li{
+		width:50%;
+	}
+/* 	.bg_2236{ */
+/* 		padding-bottom:40px !important; */
+/* 	} */
+/* 	#custom-pages_2194, .tp-control-arrow-left{ */
+/* 		float:left; */
+/* 	} */
+/* 	#custom-pages_2194 .tp-page { */
+/*   	background: url('../img/pager/pc_page_off.png') !important; */
+/* 	} */
+/* 	#custom-pages_2194 .tp-page.active{ */
+/* 		background: url('../img/pager/page_on.png') !important; */
+/* 	} */
+/* 	.tp-control-arrow-right{ */
+/* 		float:right; */
+/* 	} */
 	.custom-textarea {
 		height: auto !important;
 		width:100%;
@@ -1121,6 +1155,9 @@ list-style: none;
 	.custom-control {
 		display:none;
 	}
+/* 	div#custom-control_2194{ */
+/* 		display:block !important; */
+/* 	} */
 	p.imgM.imgM1{
 		height:auto !important;
 	}
@@ -1148,15 +1185,27 @@ list-style: none;
 	.sp-title{
 		display:block;
 	}
-	.bg_2235 .custom-textarea .tp-horizontalbox, .bg_2221 .custom-textarea .tp-horizontalbox, .bg_2235 .custom-textarea .tp-horizontalbox .tp-vertivalbox, .bg_2221 .custom-textarea .tp-horizontalbox .tp-vertivalbox{
-		height:auto !important;
-	}
+/* 	.bg_2235 .custom-textarea .tp-horizontalbox, .bg_2221 .custom-textarea .tp-horizontalbox, .bg_2235 .custom-textarea .tp-horizontalbox .tp-vertivalbox, .bg_2221 .custom-textarea .tp-horizontalbox .tp-vertivalbox{ */
+/* 		height:auto !important; */
+/* 	} */
 	.custom-textarea .tp-horizontalbox, .custom-textarea .tp-horizontalbox .tp-vertivalbox{
 		width:100% !important;
+		height:auto !important;
 	}
-	.bg_2236 .sp > img{
-		display:none;
+ 	.bg_2236 .sp > img{
+ 		display:none;
 	}
+/* 	#custom-textarea_2194{ */
+/* 		height: 255px !important; */
+/* 	} */
+/* 	.bg_2236 .box{ */
+/* 		border-radius: 2% !important; */
+/*   		opacity: .9 !important; */
+/*   		background: #fff !important; */
+/* 	} */
+/* 	.bg_2236 .box .txt{ */
+/* 		color:#000 !important; */
+/* 	} */
 }
 @media only screen and (min-width:1025px){
 	.tp-page {
@@ -1188,5 +1237,8 @@ list-style: none;
 	}
 	.content .container {
 		width:auto;
+	}
+	#custom-textarea_2194 .tp-vertivalbox, #custom-textarea_2194 .tp-horizontalbox{
+		width:100% !important;
 	}
 }

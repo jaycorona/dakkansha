@@ -21,16 +21,16 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'cinetrack_53h01');
+define('DB_NAME', 'dakkansha');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'cinetrack_d8vy4');
+define('DB_USER', 'root');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '5bbc4l9lug');
+define('DB_PASSWORD', '');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'mysql12a.xserver.jp');
+define('DB_HOST', 'localhost');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');

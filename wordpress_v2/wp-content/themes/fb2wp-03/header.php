@@ -29,7 +29,7 @@
 
 <!--[if lte IE 8]><script src="<?php bloginfo('template_directory'); ?>/css/ie/html5shiv.js"></script><![endif]-->
 <script>
-var wp_template_directory = '<?php bloginfo('template_directory'); ?>';
+var wp_template_directory = '<?php echo bloginfo('template_directory'); ?>';
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/common/js/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/common/js/jquery.cookie.js"></script>

@@ -1025,11 +1025,6 @@ body.touch .poptrox-popup .closer {
 	left:293px;
 	width:60px;
 }
-@media only screen and (max-width:768px) {
-	.main.style2.right .content {
-		left: 42%;
-	}
-}
 /*css for pagination*/
 .container {
 	width: 100%; 
@@ -1051,16 +1046,6 @@ list-style: none;
 	line-height: 18px;
 	width:100%;
 }
-@media only screen and (max-width:1024px) {
-	.custom-textarea {
-		height: auto;
-		width:100%;
-	}
-	.custom-control {
-		display:none;
-	}
-}
-
 .tp-control-arrows {
 	height: 40px;
 	text-align:center;
@@ -1100,21 +1085,6 @@ list-style: none;
 	margin: 0 4px 0 4px;
 	padding: 8px;
 }
-@-moz-document url-prefix() {
-	.tp-page {
-		margin: 8px 4px 0px;
-	}
-	.custom-control {
-		padding:.4rem;
-		padding-top:1rem;
-	}
-}
-@media only screen and (min-width:1025px){
-	.tp-page {
-		background:url('../img/pager/pc_page_off.png');
-		background-size:100%;
-	}
-}
 .tp-page.active {
 	background:url('../img/pager/page_on.png');
 	background-size:100%;
@@ -1124,7 +1094,75 @@ list-style: none;
 .tp-page span{
 	display:none;
 }
-@media only screen and (min-width:1025px) {
+
+.sp-title{
+	display:none;
+}
+	
+@-moz-document url-prefix() {
+	.tp-page {
+		margin: 8px 4px 0px;
+	}
+	.custom-control {
+		padding:.4rem;
+		padding-top:1rem;
+	}
+}
+@media only screen and (max-width:768px) {
+	.main.style2.right .content {
+		left: 42%;
+	}
+}
+@media only screen and (max-width:1024px) {
+	.custom-textarea {
+		height: auto !important;
+		width:100%;
+	}
+	.custom-control {
+		display:none;
+	}
+	p.imgM.imgM1{
+		height:auto !important;
+	}
+	.bg_2235, .bg_2221{
+		background:none !important;
+	}
+	.sp{
+		margin-bottom:0;
+	}
+	.font11 br, .ttl br{
+		display:none !important;
+	}
+	#sp-nav li:nth-child(2n+0), #sp-nav li{
+		/*border-left: 1px solid #111;
+		border-right: 1px solid #111;*/
+	}
+	#intro .box {	
+		height:auto;
+		padding: .5em;
+	}	
+	#story .box {	
+		height:auto;
+		padding: .5em;
+	}
+	.sp-title{
+		display:block;
+	}
+	.bg_2235 .custom-textarea .tp-horizontalbox, .bg_2221 .custom-textarea .tp-horizontalbox, .bg_2235 .custom-textarea .tp-horizontalbox .tp-vertivalbox, .bg_2221 .custom-textarea .tp-horizontalbox .tp-vertivalbox{
+		height:auto !important;
+	}
+	.custom-textarea .tp-horizontalbox, .custom-textarea .tp-horizontalbox .tp-vertivalbox{
+		width:100% !important;
+	}
+	.bg_2236 .sp > img{
+		display:none;
+	}
+}
+@media only screen and (min-width:1025px){
+	.tp-page {
+		background:url('../img/pager/pc_page_off.png');
+		background-size:100%;
+	}
 	.box {
 		border-radius:2%;
 		opacity:.9;
@@ -1148,14 +1186,7 @@ list-style: none;
 	.box2 .inner {
 		padding: 1em 2em;
 	}
-}
-@media only screen and (max-width:1024px) {	
-	#intro .box {	
-		height:auto;
-		padding: .5em;
-	}	
-	#story .box {	
-		height:auto;
-		padding: .5em;
-	}	
+	.content .container {
+		width:auto;
+	}
 }

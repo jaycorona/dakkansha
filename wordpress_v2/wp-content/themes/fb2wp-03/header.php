@@ -66,8 +66,27 @@ var wp_template_directory = '<?php bloginfo('template_directory'); ?>';
                 foreach ($items as $obj) {
                     if ($obj->attr_title) {
                         echo "<li><a href='javascript:void(0);' id='{$obj->attr_title}' >{$obj->title}</a></li>";
+                        echo "<script>
+                        $(document).ready(function(){
+                        $('#{$obj->attr_title}').click(function(){
+                        $('#{$obj->attr_title}').css({'color':'#000000'});
+                        }).blur(function(){
+                        $('#{$obj->attr_title}').css({'color':'#ffffff'});
+                        });
+                        });
+                        </script>";
                     } else {
-                        echo "<li><a href='{$obj->url}' >{$obj->title}</a></li>";
+                        echo "<li><a href='{$obj->url}' id='{$obj->title}'>{$obj->title}</a></li>";
+                        echo "<script>
+                        $(document).ready(function(){
+                        $('#{$obj->title}').click(function(){
+                        	$('#trailer-btn').css({'color':'#ffffff'});
+	                        $('#{$obj->title}').css({'color':'#000000'});
+	                        }).blur(function(){
+	                       		$('#{$obj->title}').css({'color':'#ffffff'});
+	                        });
+                        });
+                        </script>";
                     }
                 }
                 ?>

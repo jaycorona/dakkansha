@@ -11,6 +11,9 @@
 	<?php show_bg_css(); ?>
 	<span id="<?php echo get_post($wp_query->post->ID)->post_name; ?>"></span>
 	<section id="story" class="main style2 left fullscreen bg_<?php echo get_post_thumbnail_id(); ?>">
+		<header class="sp-title">
+			<center><h2 class="contents-ttl"><?php the_title(); ?></h2></center>
+		</header>
 		<?php 
 			$src = get_post_meta($wp_query->post->ID, "sp_header", true);
 			if (!$src) {

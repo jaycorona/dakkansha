@@ -14,5 +14,5 @@
 			global $wp_query;
 			echo $wp_query->queried_object->post_content;
 		?>
-		
+
 	</section>

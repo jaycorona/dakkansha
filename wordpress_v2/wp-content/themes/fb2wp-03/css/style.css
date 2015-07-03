@@ -1206,6 +1206,9 @@ list-style: none;
 /* 	.bg_2236 .box .txt{ */
 /* 		color:#000 !important; */
 /* 	} */
+	.like-btn {
+		bottom: 20px !important;
+	}
 }
 @media only screen and (min-width:1025px){
 	.tp-page {
@@ -1240,5 +1243,22 @@ list-style: none;
 	}
 	#custom-textarea_2194 .tp-vertivalbox, #custom-textarea_2194 .tp-horizontalbox{
 		width:100% !important;
+	}
+}
+@media only screen and (max-width:1050px) {
+	#top-pc.content.relative{
+		height:830px !important;
+	}
+}
+
+@media only screen and (max-width:1070px) {
+	#top-pc.content{
+		height:845px !important;
+	}
+}
+
+@media only screen and (max-width:1125px) {
+	#top-pc{
+		height:890px !important;
 	}
 }

@@ -38,7 +38,7 @@
 			</div>
 		</div>
 		<?php echo "<script>
-			$(window).load(function() {
+			$(document).ready(function() {
 				$('#custom-textarea_".$id."').textpager({
 					controlArrows: '#custom-control_".$id."',
 					controlPages: '#custom-control_".$id." #custom-pages_".$id."',

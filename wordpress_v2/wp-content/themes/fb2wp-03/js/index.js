@@ -36,7 +36,7 @@ function getContentsSize() {
 }
 var sliderTimeout;
 var Main = (function () {
-        var d = false;
+		var d = false;
         var v = Config.getCookie();
         var r = 0;
         var y = 0;
@@ -121,6 +121,12 @@ var Main = (function () {
             $("#trailer-btn").click(function () {
                 c()
             });
+            $("#trl-btn-1").click(function () {
+                c()
+            });
+            $("#trl-btn-2").click(function () {
+                cc()
+            });
             $("#credit").click(function () {
                 if (!_isCreditOpen) {
                     $("#top-footer").stop().animate({
@@ -201,13 +207,14 @@ var Main = (function () {
             }
         }
         function c(D) {
-            if (n) {
-                return
-            }
-            n = true;
+//            if (n) {
+//                return
+//            }
+//            n = true;
             $("body").css({
                 overflow: "hidden"
             });
+            
             $.colorbox({
                 height   : k + 34 + 35,
                 href     : l,
@@ -218,7 +225,10 @@ var Main = (function () {
                 opacity  : 0.93,
                 scrolling: false,
                 speed    : 600,
-                width    : b
+                width    : b,
+                title: function(){
+                	  return '<div class="trl-btn active" onClick="vid1()"><a class="active">本予告</a></div><div class="trl-btn" onClick="vid2()"><a>特報</a></div>';
+                }
             })
         }
         function a() {
@@ -331,7 +341,7 @@ var Main = (function () {
         }
         function w() {
             var Q = $(window).width();
-            var ad = $(window).height();
+            var ad = $(window).height() + 150;
             Q  = Q > DEF_W ? Q : DEF_W;
             ad = ad > DEF_H ? ad : DEF_H;
             var R = Q > MIN_BG_W ? Q : MIN_BG_W;
@@ -491,5 +501,5 @@ var Main = (function () {
         }
     })();
 $(document).ready(function (a) {
-    Main.init()
+	Main.init()
 });

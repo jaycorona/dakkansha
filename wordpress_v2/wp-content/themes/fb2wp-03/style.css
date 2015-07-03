@@ -4231,7 +4231,45 @@ a.post-thumbnail:hover {
 
 
 /* custom */
+#cboxTitle{
+	width:100% !important;
+	bottom:0px !important;
+	top:auto !important;
+	overflow:hidden;
+}
 
+.trl-btn:hover{
+	background:red;
+}
+
+.trl-btn.active{
+	background:red;
+}
+
+.trl-btn{
+	background:#000000;
+	width:50%;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+	padding:5px 0;
+	font-size:20px;
+	transition:.5s;
+}
+
+.trl-btn a{
+	color:#Fff;
+	transition:.5s;
+}
+
+.trl-btn a.active{
+	color:#000;
+}
+
+.trl-btn a:hover{
+	color:#000;
+}
 
 #footer{
 display:none !important;
@@ -4240,3 +4278,33 @@ display:none !important;
 p.imgM.imgM1{
 	height:200px;
 }
+
+#twitter-widget-1{
+	margin-bottom:0 !important;
+}
+
+#twitter-widget-0{
+	margin-left:-87px;
+}
+
+.fb_iframe_widget{
+	margin: -4px 14px;
+}
+
+#twitter-widget-0, .fb_iframe_widget{
+	position:absolute !important;
+}
+
+.like-btn{
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	bottom: 6%;
+}
+#cboxContent{
+	height:550px !important;
+}
+#colorbox, #cboxWrapper{
+	height: 582px !important;
+}
+

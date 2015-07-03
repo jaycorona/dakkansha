@@ -101,13 +101,15 @@ var wp_template_directory = '<?php bloginfo('template_directory'); ?>';
         ************-->
         <nav id="sp-nav">
             <ul class="clearfix">
-              <!--  <?php 
+              <?php 
                 $items = wp_get_nav_menu_items('navi');
                 foreach ($items as $obj) {
-                    echo "<li><a href='{$obj->url}'>{$obj->title}</a></li>";
+                	$title = "{$obj->title}";
+                	if($title == 'TRAILER'){ echo "<li><a href='https://youtu.be/sAs5eA5Wetw' target='_blank'>{$obj->title}</a></li>"; }
+                	else{ echo "<li><a href='{$obj->url}'>{$obj->title}</a></li>"; }
                 }
-                ?>--> 
-                <li><a href="https://youtu.be/sAs5eA5Wetw" target="_blank">TRAILER</a></li>
+                ?>
+<!--                 <li><a href="https://youtu.be/sAs5eA5Wetw" target="_blank">TRAILER</a></li> -->
                 <li><a href="https://www.facebook.com/dakkansha.jp" target="_blank">FACEBOOK</a></li>
                 <li><a href="https://twitter.com/dakkansha" target="_blank">TWITTER</a></li>          
             </ul>
